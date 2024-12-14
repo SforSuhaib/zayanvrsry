@@ -1,69 +1,104 @@
-/* Background Styling */
-body {
-    background: url('background.jpg') no-repeat center center/cover;
-    height: 100vh;
+/* Reset some basic styles for consistency */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
+    align-items: center;
+    height: 100vh;
     text-align: center;
+    flex-direction: column;
 }
 
-/* Timer Styling */
 .timer-container {
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay for visibility */
-    padding: 20px;
-    border-radius: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 80px;
+    margin-bottom: 20px;
 }
 
-/* Pixelated font for the timer */
-.timer {
-    font-family: 'Press Start 2P', cursive; /* Pixel font */
+h1 {
     font-size: 3rem;
-    margin-top: 10px;
-    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Button Styling */
-.hidden-button {
-    margin-top: 20px;
-    background-color: #ff69b4; /* Pink */
+.message {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #f05a28;
+    padding: 12px 20px;
     color: #fff;
-    padding: 10px 20px;
     border: none;
-    border-radius: 8px;
-    font-size: 1.2rem;
     cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
 }
 
-.hidden-button:hover {
-    background-color: #e63983;
+button:hover {
+    background-color: #d45022;
 }
 
-/* Fixing Heart Animation Ratio */
 .hearts {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
+    font-size: 30px;
+    margin: 20px 0;
 }
 
-.heart {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background: url('heart.png') no-repeat center center/contain;
-    animation: float 6s infinite ease-in-out;
+.timer-text {
+    font-size: 2rem;
 }
 
-@keyframes float {
-    0% { transform: translateY(0) scale(0.6); }
-    50% { transform: translateY(-200px) scale(1); }
-    100% { transform: translateY(0) scale(0.6); }
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+    .timer-container {
+        font-size: 50px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .message {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 10px 15px;
+    }
+
+    .hearts {
+        font-size: 20px;
+    }
+
+    .timer-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .timer-container {
+        font-size: 60px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 12px 18px;
+    }
 }
