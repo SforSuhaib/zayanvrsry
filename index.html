@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anniversary Timer</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Countdown</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Pixelated Font -->
 </head>
 <body>
-  <div id="timer-container">
-    <h1>Countdown to Our Special Day</h1>
-    <div id="timer"></div>
-    <p id="message">Something special is coming...</p>
-  </div>
+    <div class="content">
+        <!-- Timer Section -->
+        <div class="timer-container" id="timer-container">
+            <h1 id="timer-heading">Countdown to Our Special Day</h1>
+            <div id="timer" class="timer">
+                <p>Something special is coming...</p>
+                <p id="countdown"></p> <!-- Timer Display -->
+            </div>
+        </div>
 
-  <!-- Happy 2nd Anniversary Button, initially hidden -->
-  <div id="anniversary-message" style="display: none;">
-    <button id="celebrate-button">Happy 2nd Anniversary</button>
-    <div id="note" style="display: none;">
-      <p>Here's to our beautiful journey, filled with love, joy, and countless memories! I love you, Zainab!</p>
+        <!-- Button to display after timer ends -->
+        <div id="special-btn-container" style="display: none;">
+            <button id="special-btn" onclick="showNote()">Happy 2nd Anniversary!</button>
+        </div>
+
+        <!-- Note Section after Button click -->
+        <div id="note" class="note" style="display: none;">
+            <div class="note-background">
+                <p id="note-content"></p> <!-- Place for custom note -->
+            </div>
+        </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
