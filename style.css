@@ -79,3 +79,18 @@ img {
   font-size: 1.5em;
   margin: 10px;
 }
+
+/* Timer styles */
+#timer {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #6a0dad;
+  margin-top: 1em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Button reveal */
+#reveal-button {
+  margin-top: 20px;
+}
+
