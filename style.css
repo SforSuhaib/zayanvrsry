@@ -1,96 +1,10 @@
-/* General styles */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Cursive', Arial, sans-serif;
-  background: linear-gradient(to bottom, #e6e1f0, #b8a8d8); /* Purplish gradient */
-  color: #333;
-  text-align: center;
-  overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover; /* Replace 'background.jpg' with your file's name */
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
 }
-
-h1 {
-  color: #d63384; /* Dark pink */
-  font-size: 3em;
-  margin-top: 1em;
-  text-shadow: 2px 2px 4px #c68ec4;
-}
-
-p {
-  font-size: 1.2em;
-}
-
-button {
-  background-color: #e91e63;
-  color: #fff;
-  border: none;
-  padding: 15px 30px;
-  font-size: 1em;
-  border-radius: 8px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-button:hover {
-  background-color: #b80c4b;
-}
-
-/* Animated hearts */
-.heart {
-  position: absolute;
-  font-size: 2em;
-  color: #ff69b4; /* Pink hearts */
-  animation: float 5s ease-in infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.8;
-  }
-  100% {
-    transform: translateY(-100vh);
-    opacity: 0;
-  }
-}
-
-/* Container for images/messages */
-#images-container {
-  margin-top: 2em;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.message {
-  font-family: 'Cursive', Arial, sans-serif;
-  color: #6a0dad;
-  font-size: 1.5em;
-  margin: 10px;
-}
-
-/* Timer styles */
-#timer {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #6a0dad;
-  margin-top: 1em;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* Button reveal */
-#reveal-button {
-  margin-top: 20px;
-}
-
