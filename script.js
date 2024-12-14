@@ -33,3 +33,4 @@ document.getElementById("special-btn").onclick = function() {
     document.getElementById("special-btn-container").style.display = "none";
     document.getElementById("image-container").style.display = "block";
 };
+
