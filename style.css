@@ -24,6 +24,7 @@ h1 {
 
 #countdown {
     font-size: 60px;
+    font-family: 'Press Start 2P', cursive; /* Added pixelated font for countdown */
 }
 
 #special-btn-container {
