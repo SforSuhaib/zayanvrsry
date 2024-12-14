@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anniversary Countdown</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="timer-container">
-        <h1>Something Special is Coming Soon 💖</h1>
-        <div id="countdown" class="timer-text"></div>
-    </div>
-    <div class="message">
-        <p>Mark your calendar, we're counting down the days to our special moment!</p>
-        <button id="explore-btn" class="hidden">HAPPY 2ND ANNIVERSARY</button>
-    </div>
-    <div class="hearts">
-        💖 💖 💖
+    <!-- Background Image -->
+    <div id="background">
+        <div id="timer-container">
+            <h1 id="countdown-title">SOMETHING SPECIAL IS COMING...</h1>
+            <h2 id="countdown"></h2>
+            <button id="explore-btn" class="hidden">HAPPY 2ND ANNIVERSARY</button>
+        </div>
+        <!-- Hidden Note for Zainab -->
+        <div id="note-container" class="hidden">
+            <div id="note">
+                <h3>My Dearest Zainab,</h3>
+                <p id="note-text">
+                    <!-- Add your personal note to Zainab here -->
+                    (Write your heartfelt message for her in this section.)
+                </p>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
