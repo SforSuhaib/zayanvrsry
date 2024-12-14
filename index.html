@@ -3,31 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Countdown</title>
+    <title>Countdown Timer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Pixelated font -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Pixelated Font -->
 </head>
 <body>
-    <div class="content">
-        <!-- Timer Section -->
-        <div class="timer-container" id="timer-container">
-            <h1 id="timer-heading">Countdown to Our Special Day</h1>
-            <div id="timer" class="timer">
-                <p>Something special is coming...</p>
-                <p id="countdown"></p> <!-- Timer Display -->
-            </div>
+    <div class="timer-container">
+        <div id="timer">
+            <h1>Countdown to Our Special Day</h1>
+            <div id="countdown"></div>
         </div>
 
-        <!-- Button to display after timer ends -->
         <div id="special-btn-container" style="display: none;">
-            <button id="special-btn" onclick="showNote()">Happy 2nd Anniversary!</button>
+            <button id="special-btn" onclick="showImage()">Happy 2nd Anniversary!</button>
         </div>
 
-        <!-- Note Section after Button click -->
-        <div id="note" class="note" style="display: none;">
-            <div class="note-background">
-                <p id="note-content"></p> <!-- Place for custom note -->
-            </div>
+        <!-- Image to appear after button click -->
+        <div id="image-container" style="display: none;">
+            <img id="special-image" src="letter.jpg" alt="Special Image" />
         </div>
     </div>
 
