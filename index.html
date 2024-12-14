@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anniversary Countdown</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anniversary Timer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background Image -->
-    <div id="background">
-        <div id="timer-container">
-            <h1 id="countdown-title">SOMETHING SPECIAL IS COMING...</h1>
-            <h2 id="countdown"></h2>
-            <button id="explore-btn" class="hidden">HAPPY 2ND ANNIVERSARY</button>
-        </div>
-        <!-- Hidden Note for Zainab -->
-        <div id="note-container" class="hidden">
-            <div id="note">
-                <h3>My Dearest Zainab,</h3>
-                <p id="note-text">
-                    <!-- Add your personal note to Zainab here -->
-                    (Write your heartfelt message for her in this section.)
-                </p>
-            </div>
-        </div>
-    </div>
+  <div id="timer-container">
+    <h1>Countdown to Our Special Day</h1>
+    <div id="timer"></div>
+    <p id="message">Something special is coming...</p>
+  </div>
 
-    <script src="script.js"></script>
+  <!-- Happy 2nd Anniversary Button, initially hidden -->
+  <div id="anniversary-message" style="display: none;">
+    <button id="celebrate-button">Happy 2nd Anniversary</button>
+    <div id="note" style="display: none;">
+      <p>Here's to our beautiful journey, filled with love, joy, and countless memories! I love you, Zainab!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
