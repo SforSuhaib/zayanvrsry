@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Anniversary Timer!</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Countdown</title>
+    <!-- Link to Google Fonts for Pixelated Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Heading -->
-  <h1>Something Special is Coming 💖</h1>
 
-  <!-- Timer -->
-  <div id="timer">Loading...</div>
+    <!-- Overlay for the Countdown Timer -->
+    <div class="timer-container">
+        <h1>Something Special is Coming 💖</h1>
+        <p class="timer" id="countdown"></p>
 
-  <!-- Button (Hidden until timer ends) -->
-  <button id="reveal-button" style="display: none;" onclick="showSurprise()">Explore Our Journey</button>
+        <!-- Hidden Button that will show after countdown -->
+        <button class="hidden-button" id="exploreButton" style="display:none;">Explore Our Journey</button>
+    </div>
 
-  <!-- Image and Message Container -->
-  <div id="images-container"></div>
+    <!-- Floating Heart Animation -->
+    <div class="hearts"></div>
 
-  <!-- Floating Hearts -->
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
