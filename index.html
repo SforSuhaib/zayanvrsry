@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timer and Button Example</title>
+    <title>Anniversary Countdown</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="timer" style="font-family: 'Pixelated', sans-serif;"></div>
-    <button id="specialButton" style="display: none;">Happy 2nd Anniversary</button>
+    <!-- Countdown section -->
+    <h1>Countdown to Our Special Day</h1>
+    <p>Something special is coming...</p>
+
+    <!-- Timer container -->
+    <div id="timerContainer">
+        <div id="timer"></div>
+    </div>
+
+    <!-- Anniversary Button -->
+    <button id="specialButton" style="display:none;" onclick="showLetter()">HAPPY 2ND ANNIVERSARY</button>
+
+    <!-- Letter Container (Hidden until button is clicked) -->
+    <div id="letterContainer" style="display:none;">
+        <img id="letterImage" src="letter.jpg" alt="Letter">
+    </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
