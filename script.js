@@ -1,28 +1,27 @@
-// Set the date we're counting down to
-var countDownDate = new Date("Dec 15, 2024 00:00:00").getTime();
+// Countdown Timer - Set target date (December 15, 2024)
+const targetDate = new Date("Dec 15, 2024 00:00:00").getTime();
 
-// Update the countdown every 1 second
-var x = setInterval(function() {
+// Function to update the countdown timer
+function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
 
-  // Get the current date and time
-  var now = new Date().getTime();
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+    // Display the countdown
+    document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
-  // Time calculations for days, hours, minutes, and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // If the countdown is over, show the button
+    if (distance < 0) {
+        clearInterval(timerInterval);
+        document.getElementById("countdown").innerHTML = "It's Time!";
+        document.getElementById("explore-btn").style.display = "block";
+    }
+}
 
-  // Display the result in the element with id="countdown"
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+// Update countdown every second
+const timerInterval = setInterval(updateCountdown, 1000);
 
-  // If the countdown is over, show the button and clear the interval
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
-    document.getElementById("exploreButton").style.display = "block";
-  }
-}, 1000);
