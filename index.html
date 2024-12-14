@@ -4,23 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anniversary Countdown</title>
-    <!-- Link to Google Fonts for Pixelated Font -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Overlay for the Countdown Timer -->
     <div class="timer-container">
-        <h1>Something Special is Coming 💖</h1>
-        <p class="timer" id="countdown"></p>
-
-        <!-- Hidden Button that will show after countdown -->
-        <button class="hidden-button" id="exploreButton" style="display:none;">Explore Our Journey</button>
+        <h1>Something Special is Coming Soon 💖</h1>
+        <div id="countdown" class="timer-text"></div>
     </div>
-
-    <!-- Floating Heart Animation -->
-    <div class="hearts"></div>
+    <div class="message">
+        <p>Mark your calendar, we're counting down the days to our special moment!</p>
+        <button id="explore-btn" style="display: none;">Explore Our Journey</button>
+    </div>
+    <div class="hearts">
+        💖 💖 💖
+    </div>
 
     <script src="script.js"></script>
 </body>
