@@ -5,23 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anniversary Countdown</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Countdown section -->
-    <h1>Countdown to Our Special Day</h1>
-    <p>Something special is coming...</p>
-
-    <!-- Timer container -->
-    <div id="timerContainer">
+    <!-- Timer Section -->
+    <div class="container">
         <div id="timer"></div>
+        <div id="specialButton" onclick="showLetter()">HAPPY 2ND ANNIVERSARY</div>
     </div>
 
-    <!-- Anniversary Button -->
-    <button id="specialButton" style="display:none;" onclick="showLetter()">HAPPY 2ND ANNIVERSARY</button>
-
-    <!-- Letter Container (Hidden until button is clicked) -->
+    <!-- Image Section to appear after button click -->
     <div id="letterContainer" style="display:none;">
-        <img id="letterImage" src="letter.jpg" alt="Letter">
+        <img src="letter.jpg" alt="Letter" id="letterImage">
     </div>
 
     <script src="script.js"></script>
