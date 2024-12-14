@@ -1,27 +1,29 @@
-// Countdown Timer - Set target date (December 15, 2024)
-const targetDate = new Date("Dec 15, 2024 00:00:00").getTime();
+// Set the date for the countdown (15th December)
+const countdownDate = new Date("December 15, 2024 00:00:00").getTime();
 
-// Function to update the countdown timer
-function updateCountdown() {
+// Update the countdown every second
+let countdownFunction = setInterval(function() {
     const now = new Date().getTime();
-    const distance = targetDate - now;
+    const distance = countdownDate - now;
 
+    // Time calculations for days, hours, minutes, and seconds
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Display the countdown
-    document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    // Display the result
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-    // If the countdown is over, show the button
+    // If the countdown is over, show the "HAPPY 2ND ANNIVERSARY" button
     if (distance < 0) {
-        clearInterval(timerInterval);
-        document.getElementById("countdown").innerHTML = "It's Time!";
-        document.getElementById("explore-btn").style.display = "block";
+        clearInterval(countdownFunction);
+        document.getElementById("countdown").innerHTML = "EXPIRED";
+        document.getElementById("explore-btn").style.display = "inline-block";
     }
-}
+}, 1000);
 
-// Update countdown every second
-const timerInterval = setInterval(updateCountdown, 1000);
-
+// Show the note after the button is clicked
+document.getElementById("explore-btn").addEventListener("click", function() {
+    document.getElementById("note-container").style.display = "block";
+});
