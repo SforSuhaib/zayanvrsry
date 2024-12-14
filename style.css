@@ -12,6 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
+    flex-direction: column;
 }
 
 /* Timer Container */
@@ -20,12 +21,14 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    margin-top: 20px; /* Added spacing for positioning */
 }
 
 /* Timer Text Styling */
 .timer {
     font-size: 3em;
     font-family: 'Press Start 2P', sans-serif; /* Pixelated font */
+    text-shadow: none; /* Removed shadow */
 }
 
 /* Special Button Container */
