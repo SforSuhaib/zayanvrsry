@@ -17,7 +17,7 @@ body {
 }
 
 #showLetterBtn {
-    background-color: transparent;
+    background-color: pink;
     border: 2px solid gold;
     padding: 20px 40px;
     font-size: 24px;
@@ -25,6 +25,7 @@ body {
     color: white;
     cursor: pointer;
     transition: 0.3s;
+    text-transform: uppercase;
 }
 
 #showLetterBtn:hover {
