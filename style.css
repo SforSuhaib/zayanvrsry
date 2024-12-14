@@ -1,31 +1,32 @@
+/* Importing the pixelated font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background: url('your-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
     text-align: center;
     position: relative;
-    height: 100vh; /* Make the body take the full height of the viewport */
+    height: 100vh; /* Full viewport height */
 }
 
-#timer {
-    font-size: 40px;
+h1 {
+    font-size: 30px;
     font-weight: bold;
-    margin-top: 20px;
-    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #specialButton {
     position: fixed;
-    bottom: 20px; /* 20px from the bottom */
+    bottom: 20px; /* 20px from the bottom of the screen */
     left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for exact center alignment */
-    padding: 10px 20px;
+    transform: translateX(-50%); /* Corrects the centering */
+    padding: 15px 30px;
     font-size: 20px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
-    display: none; /* Initially hide the button */
-}
+    display: block; /*
 
-#specialButton:hover {
-    background-color: #45a049;
-}
