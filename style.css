@@ -1,78 +1,44 @@
-/* Global Styles */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    height: 100%;
-    background-color: #f7f3f9;
-    color: #333;
+/* Apply the same background to the entire website */
+body {
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-/* Background Styles */
-#background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('your-image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-}
-
-/* Timer Container */
+/* Timer container styles */
 #timer-container {
-    text-align: center;
-    color: white;
+  margin-top: 200px;
 }
 
-/* Countdown Timer */
-#countdown {
-    font-size: 50px; /* Reduced size of the timer */
-    font-family: 'PixelatedFont', sans-serif;
-    margin-top: 20px;
+#timer {
+  font-size: 3em;
+  font-family: 'PixelatedFont', sans-serif; /* Replace with your chosen pixel font */
 }
 
-/* Anniversary Button */
-#explore-btn {
-    display: none;
-    margin-top: 20px;
-    font-size: 20px;
-    padding: 15px 30px;
-    background-color: #f2c0f9;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-family: 'Playfair Display', serif;
+/* Initially hide the button and the note */
+#anniversary-message {
+  display: none;
 }
 
-/* Note Section */
-#note-container {
-    display: none;
-    background: url('paper-texture.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 30px;
-    border-radius: 15px;
-    width: 70%;
-    margin-top: 30px;
-    text-align: center;
+#celebrate-button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  background-color: #ff66cc;
+  border: none;
+  cursor: pointer;
 }
 
-#note h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+#note {
+  margin-top: 20px;
+  font-size: 1.2em;
 }
 
-#note p {
-    font-size: 18px;
-    color: #333;
-}
-
-/* Hidden elements */
-.hidden {
-    display: none;
+/* Styling for the message after the timer finishes */
+#message {
+  font-size: 1.5em;
+  margin-top: 20px;
 }
