@@ -1,104 +1,78 @@
-/* Reset some basic styles for consistency */
-* {
+/* Global Styles */
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    background-color: #f7f3f9;
+    color: #333;
 }
 
-/* Base Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('background.jpg');
+/* Background Styles */
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('your-image.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    text-align: center;
     flex-direction: column;
+    height: 100%;
 }
 
-.timer-container {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 80px;
-    margin-bottom: 20px;
+/* Timer Container */
+#timer-container {
+    text-align: center;
+    color: white;
 }
 
-h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+/* Countdown Timer */
+#countdown {
+    font-size: 50px; /* Reduced size of the timer */
+    font-family: 'PixelatedFont', sans-serif;
+    margin-top: 20px;
 }
 
-.message {
-    font-size: 1.5rem;
-    margin: 20px 0;
-}
-
-button {
-    background-color: #f05a28;
-    padding: 12px 20px;
+/* Anniversary Button */
+#explore-btn {
+    display: none;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 15px 30px;
+    background-color: #f2c0f9;
     color: #fff;
     border: none;
     cursor: pointer;
-    font-size: 1rem;
-    border-radius: 5px;
+    font-family: 'Playfair Display', serif;
 }
 
-button:hover {
-    background-color: #d45022;
+/* Note Section */
+#note-container {
+    display: none;
+    background: url('paper-texture.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 15px;
+    width: 70%;
+    margin-top: 30px;
+    text-align: center;
 }
 
-.hearts {
-    font-size: 30px;
-    margin: 20px 0;
+#note h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.timer-text {
-    font-size: 2rem;
+#note p {
+    font-size: 18px;
+    color: #333;
 }
 
-/* Mobile Devices */
-@media screen and (max-width: 768px) {
-    .timer-container {
-        font-size: 50px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    .message {
-        font-size: 1rem;
-    }
-
-    button {
-        font-size: 0.8rem;
-        padding: 10px 15px;
-    }
-
-    .hearts {
-        font-size: 20px;
-    }
-
-    .timer-text {
-        font-size: 1.5rem;
-    }
-}
-
-/* Tablets */
-@media screen and (max-width: 1024px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    .timer-container {
-        font-size: 60px;
-    }
-
-    button {
-        font-size: 1rem;
-        padding: 12px 18px;
-    }
+/* Hidden elements */
+.hidden {
+    display: none;
 }
