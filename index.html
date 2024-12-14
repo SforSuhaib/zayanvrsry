@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Anniversary!</title>
+  <title>Happy Anniversary Timer!</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Happy 2nd Anniversary, Zainab! 💖</h1>
-  <p>Here's to our love, laughter, and countless memories!</p>
+  <!-- Heading -->
+  <h1>Something Special is Coming 💖</h1>
 
-  <!-- Button -->
-  <button onclick="showSurprise()">Explore Our Journey</button>
+  <!-- Timer -->
+  <div id="timer">Loading...</div>
+
+  <!-- Button (Hidden until timer ends) -->
+  <button id="reveal-button" style="display: none;" onclick="showSurprise()">Explore Our Journey</button>
 
   <!-- Image and Message Container -->
   <div id="images-container"></div>
