@@ -1,78 +1,50 @@
-/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    background-image: url('background.jpg');
+    background-size: cover;
+    text-align: center;
     margin: 0;
     padding: 0;
-    background-image: url('background.jpg'); /* Set the background image */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+    text-shadow: none; /* Removed the shadow from the text */
+}
+
+.timer-container {
+    padding-top: 20px; /* Move the timer up */
+    position: absolute;
+    top: 20px; /* Timer will be at the top of the page */
+    width: 100%;
     text-align: center;
-    flex-direction: column;
 }
 
-/* Timer Container */
-#timer-container {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 20px; /* Added spacing for positioning */
+#countdown {
+    font-size: 60px;
 }
 
-/* Timer Text Styling */
-.timer {
-    font-size: 3em;
-    font-family: 'Press Start 2P', sans-serif; /* Pixelated font */
-    text-shadow: none; /* Removed shadow */
-}
-
-/* Special Button Container */
 #special-btn-container {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
-/* Note Styling */
-.note {
-    margin-top: 50px;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    display: inline-block;
-}
-
-.note-background {
-    background: url('background.jpg') center center no-repeat;
-    padding: 50px;
-    background-size: cover;
-    color: white;
-    border-radius: 10px;
-    font-size: 1.5em;
-}
-
-/* Button Styling */
 button {
-    background-color: #f73b93;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.5em;
+    padding: 10px 30px;
+    font-size: 20px;
     cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s;
+    background-color: #f1c40f;
+    border: none;
+    color: white;
 }
 
 button:hover {
-    background-color: #ec2677;
+    background-color: #e67e22;
 }
 
-/* Timer Heading */
-#timer-heading {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
+#special-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
 }
